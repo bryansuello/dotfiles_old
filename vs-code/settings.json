@@ -1,0 +1,97 @@
+{
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Hack Nerd Font', 'Droid Sans Mono', 'JetBrains Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files\\Firefox Developer Edition\\firefox.exe",
+  "breadcrumbs.enabled": false, //file path below tabs.
+
+  // "vim.vimrc.path": "/home/daddy/.config/nvim/init.vim",
+  "vim.startInInsertMode": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+
+  "liveServer.settings.CustomBrowser": "firefox",
+  "glassit.alpha": 240,
+  "window.titleBarStyle": "custom",
+  "editor.fontLigatures": true,
+  "workbench.editor.tabSizing": "shrink",
+
+  //Color Customizations
+  "workbench.colorCustomizations": {
+    "workbench.editor.tabSizing": "shrink",
+    "activityBar.background": "#46003a",
+    "activityBar.foreground": "#62ff00",
+    "titleBar.inactiveBackground": "#464646",
+    "titleBar.activeForeground": "#2bff00",
+    "titleBar.activeBackground": "#46003a",
+    "statusBar.background": "#000000",
+    "statusBar.foreground": "#2bff00",
+    "editorCursor.background": "#242424",
+    "editorCursor.foreground": "#15f4ee",
+    "sideBar.background": "#000000",
+    "sideBar.foreground": "#62ff00",
+    "editor.background": "#000000",
+    "editor.lineHighlightBackground": "#07071a",
+    "statusBar.noFolderBackground": "#000000",
+    "statusBar.debuggingBackground": "#000000",
+    "statusBar.debuggingForeground": "#62ff00",
+    "tab.inactiveBackground": "#000000",
+    "tab.inactiveForeground": "#62ff00",
+    "tab.unfocusedActiveForeground": "#62ff00",
+    "tab.activeBackground": "#46003a",
+    "tab.activeForeground": "#62ff00",
+    "editorGroupHeader.tabsBackground": "#000000", // the unoccupied tab area.
+    "editorHint.foreground": "#62ff00",
+
+    //auto suggest
+    "editorSuggestWidget.background": "#000000",
+    "editorSuggestWidget.foreground": "#62ff00",
+    "editorSuggestWidget.selectedBackground": "#46003a",
+    "editorSuggestWidget.selectedForeground": "#62ff00",
+    "editorSuggestWidget.highlightForeground": "#ffff", // typed(matching) symbols color
+    //auto suggest end
+
+    "editorLineNumber.foreground": "#62ff00",
+    "editorLineNumber.activeForeground": "#ff009d"
+  },
+
+  "editor.cursorBlinking": "phase",
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "window.menuBarVisibility": "compact",
+  "editor.tokenColorCustomizations": {},
+
+  //Date & Time extension
+  // "dateTime.showDayOfMonth": true,
+  // "dateTime.showMonth": true,
+  // "dateTime.use24HourClock": false,
+  // "dateTime.showAMPM": true,
+  // "dateTime.customFormat": "dddd, MM-DD-YYYY HH:mm:ss",
+  "editor.semanticTokenColorCustomizations": {},
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Molokayo",
+  "workbench.sideBar.location": "right",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideTabs": false,
+  "zenMode.centerLayout": false,
+  "zenMode.restore": false,
+  "zenMode.silentNotifications": false,
+  "workbench.startupEditor": "none",
+  "editor.codeLens": false,
+  "telemetry.telemetryLevel": "off",
+  "editor.linkedEditing": true //auto rename tag feature, no need for extension
+}         
