@@ -8,14 +8,22 @@ bind-key C-x send-prefix
 
 #supposed to fix the vim airline not appearning in tmux
 set -g default-terminal "screen-256color" 
-set -g status-bg black
-set -g status-fg blue
+#set -g status-bg black
+#set -g status-fg blue
 #only accpts basic colors
 
 #file path
 set -g status-left-length 85 #give file path enough space to display path
-set -g status-left "#{pane_current_path}  "
+set -g status-left "#[fg=red]#H  #[fg=blue]#{pane_current_path}  "
 
 #display time on status bar
- #set -g status-right '#(TZ="Asia/Manila" date +"%%m-%%d-%%Y %%H:%%M")'
-set -g status-right "#[fg=green]%A, %d %b %Y | %I:%M %p"
+#set -g status-right "#[fg=red,dim,bg=default]#(uptime | cut -f 4-5 -d ' ' | cut -f 1 -d ',') "
+set -g status-right "#[fg=red]up#(uptime | cut -f 4-5 -d ' ' | cut -f 1 -d ',')  #[fg=green]| %A, %b %d %Y | %I:%M %p"
+
+
+set-option -g status on
+set-option -g status-interval 1
+set-option -g status-justify centre
+set-option -g status-style fg=colour136 #set gold fg, no background color
+#set-option -g status-left "#[fg=green]#H #[fg=black]• #[fg=green,bright]#(uname -r)#[default]"
+set-option -g status-right-length 140
