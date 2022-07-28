@@ -94,4 +94,4 @@
   "editor.codeLens": false,
   "telemetry.telemetryLevel": "off",
   "editor.linkedEditing": true //auto rename tag feature, no need for extension
-}         
+}
