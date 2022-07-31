@@ -1,9 +1,9 @@
 vim
-colonize
+colonize - quickly add semicolon to end of line
 prettier 
 eslint
-code spell checker
-molokayo theme
+code spell checker - save time lookin for errors caused by misspelling class names for ex.
+molokayo theme - only theme installed, similar to vim theme
 material icon theme
 colorize
 rainbow brackets
@@ -14,4 +14,4 @@ live server
 live sass compiler
 ejs language support
 remote wsl
-es7 + react/redux/react-native snippets
+es7 + react/redux/react-native snippets - slowest, disable when not writing react or using snippets
