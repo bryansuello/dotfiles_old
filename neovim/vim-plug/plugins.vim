@@ -43,3 +43,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive' "issue vim commands inside vim
 
 call plug#end()
+
+
+
+
