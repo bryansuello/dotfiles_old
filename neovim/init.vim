@@ -8,7 +8,7 @@ let mapleader = " " " map leader to Space
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
-"set nowrap                             " Display long lines as just one line
+"set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -26,7 +26,7 @@ set softtabstop=4
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
-"set autoindent                          " Good auto indent
+set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 set number                              " Line numbers
 "set relativenumber                      " 1-10 where the cursor is
@@ -41,12 +41,12 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                          " Your working directory will always be the same as your working directory
-set termguicolors                       " theme cyberpunk neon better integration
+"set termguicolors                       " theme cyberpunk neon better integration
 set nu                                  "highlights the current line number you are on
 set nohlsearch                          " removes the highlight after you search a word.
 set incsearch                           "starts highlighting while you type a search
 set scrolloff=8                         "only starts scrolling down when you are 8 lines to the bottom of the page
-set signcolumn=yes                      "makes and extra column on the left where errors are displayed and stuff, like linting
+"set signcolumn=yes                      "makes and extra column on the left where errors are displayed and stuff, like linting
 "set colorcolumn=80                     "sets a gudieline on the right side of the editor not to exceed when using tabs writing code. 80 for 80 columns
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
