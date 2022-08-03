@@ -15,3 +15,4 @@ live sass compiler
 ejs language support
 remote wsl
 es7 + react/redux/react-native snippets - slowest, disable when not writing react or using snippets
+auto rename tag - vs code autorename only works on html, must get this for react and other languages

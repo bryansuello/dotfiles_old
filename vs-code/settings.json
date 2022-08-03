@@ -26,7 +26,7 @@
   "liveServer.settings.CustomBrowser": "firefox",
   "glassit.alpha": 240,
   "window.titleBarStyle": "custom",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "workbench.editor.tabSizing": "shrink",
 
   //Color Customizations
@@ -82,7 +82,6 @@
   // "dateTime.customFormat": "dddd, MM-DD-YYYY HH:mm:ss",
   "editor.semanticTokenColorCustomizations": {},
   "editor.renderWhitespace": "all",
-  "workbench.colorTheme": "Molokayo",
   "workbench.sideBar.location": "right",
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
@@ -93,5 +92,7 @@
   "workbench.startupEditor": "none",
   "editor.codeLens": false,
   "telemetry.telemetryLevel": "off",
-  "editor.linkedEditing": true //auto rename tag feature, no need for extension
+  "editor.linkedEditing": true,
+  "editor.guides.bracketPairs": true,
+  "workbench.colorTheme": "Molokayo" //auto rename tag feature, no need for extension
 }
