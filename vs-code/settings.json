@@ -32,11 +32,11 @@
   //Color Customizations
   "workbench.colorCustomizations": {
     "workbench.editor.tabSizing": "shrink",
-    "activityBar.background": "#46003a",
+    "activityBar.background": "#000000",
     "activityBar.foreground": "#62ff00",
-    "titleBar.inactiveBackground": "#464646",
+    "titleBar.inactiveBackground": "#000d1f",
     "titleBar.activeForeground": "#2bff00",
-    "titleBar.activeBackground": "#46003a",
+    "titleBar.activeBackground": "#000000",
     "statusBar.background": "#000000",
     "statusBar.foreground": "#2bff00",
     "editorCursor.background": "#242424",
@@ -49,10 +49,10 @@
     "statusBar.debuggingBackground": "#000000",
     "statusBar.debuggingForeground": "#62ff00",
     "tab.inactiveBackground": "#000000",
-    "tab.inactiveForeground": "#62ff00",
+    "tab.inactiveForeground": "#a0a0a0",
     "tab.unfocusedActiveForeground": "#62ff00",
-    "tab.activeBackground": "#46003a",
-    "tab.activeForeground": "#62ff00",
+    "tab.activeBackground": "#001646",
+    "tab.activeForeground": "#e0e0e0",
     "editorGroupHeader.tabsBackground": "#000000", // the unoccupied tab area.
     "editorHint.foreground": "#62ff00",
 
@@ -64,13 +64,13 @@
     "editorSuggestWidget.highlightForeground": "#ffff", // typed(matching) symbols color
     //auto suggest end
 
-    "editorLineNumber.foreground": "#62ff00",
-    "editorLineNumber.activeForeground": "#ff009d"
+    "editorLineNumber.foreground": "#00417e",
+    "editorLineNumber.activeForeground": "#7c7c7c"
   },
 
   "editor.cursorBlinking": "phase",
   "editor.minimap.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "window.menuBarVisibility": "compact",
   "editor.tokenColorCustomizations": {},
 
@@ -94,5 +94,6 @@
   "telemetry.telemetryLevel": "off",
   "editor.linkedEditing": true,
   "editor.guides.bracketPairs": true,
-  "workbench.colorTheme": "Molokayo" //auto rename tag feature, no need for extension
+  "workbench.colorTheme": "Monokai Dimmed" //auto rename tag feature, no need for extension
+  //"editor.colorDecorators": false //color box beside color code
 }
