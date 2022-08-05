@@ -65,7 +65,8 @@ nmap <leader>f  <Plug>(coc-format-selected)
 
 "Airline theme
 "let g:airline_theme='xtermlight'
-let g:airline_theme='solarized'
+"murmur
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1 "smarter  tab line
 let g:airline_powerline_fonts = 1
 
@@ -93,12 +94,12 @@ let g:indent_guides_enable_on_vim_startup = 1 "auto enable
 "indent guideEnd
 
 "THEME, COLOR SCHEME
- :colorscheme molokayo
- hi Normal guibg=NONE ctermbg=NONE 
+ :colorscheme gruvbox
+ "hi Normal guibg=NONE ctermbg=NONE 
   "not let dark theme background take effect
 
 "CURSOR
-highlight iCursor guifg=white guibg=red  
+"highlight iCursor guifg=white guibg=red  
 "above sets the cursor insert mode color to red.
 set guicursor+=i:ver100-iCursor "sets cursor line cursor on insert mode, also sets it to a 100% vertical line instead of dfault 25%.
 
@@ -106,6 +107,7 @@ set guicursor+=i:ver100-iCursor "sets cursor line cursor on insert mode, also se
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra' "set current directory as working directory if no directory specified
+
 
 " let g:indentLine_setColors = 0 "overwrite gray indent color with colorscheme
 

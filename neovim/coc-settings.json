@@ -1,11 +1,11 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "diagnostic.checkCurrentLine": false,
-  "diagnostic.virtualText": true,
-  "diagnostic.virtualTextCurrentLineOnly": false,
-  "eslint.autoFixOnSave": true,
+  "diagnostic.checkCurrentLine": true,
+  //"diagnostic.virtualText": true,
+  //"diagnostic.virtualTextCurrentLineOnly": false,
+  //"eslint.autoFixOnSave": true,
 
   // prettier config
-  "prettier.printWidth": 100, // 80 default and standard but doesnt work properly cuttin lines in html
-  "prettier.singleQuote": true //use single quotes instead of double
+  "prettier.printWidth": 100 // 80 default and standard but doesnt work properly cuttin lines in html
+  //"prettier.singleQuote": true //use single quotes instead of double for jscript
 }

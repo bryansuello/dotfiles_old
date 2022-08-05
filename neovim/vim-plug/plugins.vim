@@ -18,12 +18,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc-css'
     Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
-    " Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' } "react snippets
-    Plug 'SirVer/ultisnips'
-    Plug 'mlaursen/vim-react-snippets'
+    "Plug 'SirVer/ultisnips'
     Plug 'mattn/emmet-vim' "emmet
     Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-    "Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
     Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
     Plug 'luochen1990/rainbow' "tag pair colorizer
     let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
@@ -31,19 +28,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline' "airline plugin (The status bar)
     Plug 'vim-airline/vim-airline-themes' "airline themes
     Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-    "really good. https://github.com/NeuralNine/config-files/blob/master/init.vim
-    Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() }         } "not wowrking
-    Plug 'junegunn/fzf.vim'
-   " Plug 'nathanaelkane/vim-indent-guides' "indent colors/guide - all that
-   " gray line bothers you.
     Plug 'easymotion/vim-easymotion'
     Plug 'ctrlpvim/ctrlp.vim' "Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
     Plug 'Yggdroot/indentLine' "indent line. better than colors
-    Plug 'tpope/vim-fugitive' "issue vim commands inside vim
+    "really good. https://github.com/NeuralNine/config-files/blob/master/init.vim
+    Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw
+   " Plug 'junegunn/fzf', { 'do': { -> fzf#install() }         } "not wowrking
+   " Plug 'junegunn/fzf.vim'  ctrl p does d same thing inside dir
+   " Plug 'nathanaelkane/vim-indent-guides' "indent colors/guide - all that
+   " gray line bothers you.
+    " Plug 'tpope/vim-fugitive' "issue git commands inside vim  
+    " dont need to make git commands inside vim, u ve got unli terminal.
+    " Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' } "react snippets
+    " Plug 'mlaursen/vim-react-snippets' no relyin on snippets, type, memorize
 
 call plug#end()
-
-
-
-
