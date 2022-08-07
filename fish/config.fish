@@ -1,6 +1,7 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-set -U fish_greeting ""
+# Commands to run in interactive sessions can go here
+
+#set -U fish_greeting ""
 
  #ALIASES
  alias cl="clear"
@@ -10,9 +11,11 @@ set -U fish_greeting ""
  #alias ls="ls -lah --color=auto"
  alias ls="logo-ls -lah"
  alias nps="npm start"
- alias 1="cd /home/daddy/dev" #dev directory
- alias 2="cd /mnt/c/Users/brys/" #c drive
- alias 3="cd /mnt/x/" #x drive(ssd)
+ alias 1="cd /home/daddy/dev"
+ alias 2="cd /mnt/c/Users/brys/"
+ alias 3="cd /mnt/x/"
  alias 4="cd ~/.config"
+ alias ex="explorer.exe"
+ alias lv="lvim"
 
 end
