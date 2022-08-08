@@ -3,12 +3,22 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.wordWrap": "on",
-  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Hack Nerd Font', 'Droid Sans Mono', 'JetBrains Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files\\Firefox Developer Edition\\firefox.exe",
-  "breadcrumbs.enabled": false, //file path below tabs.
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Hack Nerd Font', monospace, 'Droid Sans Fallback'",
+  "breadcrumbs.enabled": false,
+  "editor.fontLigatures": false,
+  "workbench.editor.tabSizing": "shrink",
 
+  //exclude editor from watching these directories to use less resources
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true
+  },
+
+  // VIM
   // "vim.vimrc.path": "/home/daddy/.config/nvim/init.vim",
   "vim.startInInsertMode": false,
   "vim.insertModeKeyBindings": [
@@ -17,69 +27,24 @@
       "after": ["<Esc>"]
     }
   ],
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
   "vim.easymotion": true,
   "vim.leader": "<space>",
 
-  "liveServer.settings.CustomBrowser": "firefox",
-  "glassit.alpha": 240,
-  "window.titleBarStyle": "custom",
-  "editor.fontLigatures": false,
-  "workbench.editor.tabSizing": "shrink",
-
   //Color Customizations
   "workbench.colorCustomizations": {
-    "workbench.editor.tabSizing": "shrink",
-    "activityBar.background": "#000000",
-    "activityBar.foreground": "#62ff00",
-    "titleBar.inactiveBackground": "#000d1f",
-    "titleBar.activeForeground": "#2bff00",
-    "titleBar.activeBackground": "#000000",
-    "statusBar.background": "#000000",
-    "statusBar.foreground": "#2bff00",
-    "editorCursor.background": "#242424",
-    "editorCursor.foreground": "#15f4ee",
-    "sideBar.background": "#000000",
-    "sideBar.foreground": "#62ff00",
-    "editor.background": "#000000",
-    "editor.lineHighlightBackground": "#07071a",
-    "statusBar.noFolderBackground": "#000000",
-    "statusBar.debuggingBackground": "#000000",
-    "statusBar.debuggingForeground": "#62ff00",
-    "tab.inactiveBackground": "#000000",
-    "tab.inactiveForeground": "#a0a0a0",
-    "tab.unfocusedActiveForeground": "#62ff00",
-    "tab.activeBackground": "#001646",
-    "tab.activeForeground": "#e0e0e0",
-    "editorGroupHeader.tabsBackground": "#000000", // the unoccupied tab area.
-    "editorHint.foreground": "#62ff00",
-
-    //auto suggest
-    "editorSuggestWidget.background": "#000000",
-    "editorSuggestWidget.foreground": "#62ff00",
-    "editorSuggestWidget.selectedBackground": "#46003a",
-    "editorSuggestWidget.selectedForeground": "#62ff00",
-    "editorSuggestWidget.highlightForeground": "#ffff", // typed(matching) symbols color
-    //auto suggest end
-
-    "editorLineNumber.foreground": "#00417e",
-    "editorLineNumber.activeForeground": "#7c7c7c"
+    "workbench.editor.tabSizing": "shrink"
   },
 
   "editor.cursorBlinking": "phase",
   "editor.minimap.enabled": false,
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
-  "window.menuBarVisibility": "compact",
   "editor.tokenColorCustomizations": {},
 
   //Date & Time extension
-  // "dateTime.showDayOfMonth": true,
-  // "dateTime.showMonth": true,
-  // "dateTime.use24HourClock": false,
-  // "dateTime.showAMPM": true,
-  // "dateTime.customFormat": "dddd, MM-DD-YYYY HH:mm:ss",
+  "dateTime.showDayOfMonth": true,
+  "dateTime.showMonth": true,
+  "dateTime.use24HourClock": false,
+  "dateTime.showAMPM": true,
+  "dateTime.customFormat": "ddd, MM-DD-YY   hh:mm A",
   "editor.semanticTokenColorCustomizations": {},
   "editor.renderWhitespace": "all",
   "workbench.sideBar.location": "right",
@@ -94,6 +59,19 @@
   "telemetry.telemetryLevel": "off",
   "editor.linkedEditing": true,
   "editor.guides.bracketPairs": true,
-  "workbench.colorTheme": "Monokai Dimmed" //auto rename tag feature, no need for extension
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 15,
+  "editor.hideCursorInOverviewRuler": true,
   //"editor.colorDecorators": false //color box beside color code
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0, //minimap inside scrollbar
+  "workbench.activityBar.visible": false,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.layoutControl.enabled": false,
+  // "window.menuBarVisibility": "compact", //use :q, :bd, or :bdelete - the vim way
+  "vscode_custom_css.imports": ["file:///C:/Users/brys/Documents/custom.css"],
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "hidden"
 }
