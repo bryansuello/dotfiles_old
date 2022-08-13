@@ -54,7 +54,6 @@
     "editor.guides.bracketPairs": true,
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontSize": 15,
     "editor.hideCursorInOverviewRuler": true,
     //"editor.colorDecorators": false //color box beside color code
     "editor.scrollbar.horizontal": "hidden",
@@ -80,5 +79,6 @@
     //prettier
     "prettier.singleQuote": true, //singe quotes for javascript files
     "prettier.arrowParens": "avoid",
-    "prettier.semi": true
+    "prettier.semi": true,
+    "editor.glyphMargin": false //space left side of line numbers
 }
