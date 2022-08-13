@@ -1,14 +1,13 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
-" set leader key
-let mapleader = " " " map leader to Space
+let mapleader = " "
 "map <leader>J <Plug>(easymotion-s)
 "map <leader>j <Plug>(easymotion-f)
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
-"set nowrap                              " Display long lines as just one line
+set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -41,7 +40,7 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                          " Your working directory will always be the same as your working directory
-"set termguicolors                       " theme cyberpunk neon better integration
+set termguicolors                       " theme cyberpunk neon better integration
 set nu                                  "highlights the current line number you are on
 set nohlsearch                          " removes the highlight after you search a word.
 set incsearch                           "starts highlighting while you type a search
@@ -52,16 +51,22 @@ set scrolloff=8                         "only starts scrolling down when you are
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 "nerdtree icons
-let g:NERDTreeDirArrowExpandable="+"
-let g:NERDTreeDirArrowCollapsible="~"
+"let g:NERDTreeDirArrowExpandable="+"
+"let g:NERDTreeDirArrowCollapsible="~"
+" let g:NERDTreeDirArrowExpandable="㊉"
+" let g:NERDTreeDirArrowCollapsible="㊀"
+let g:NERDTreeDirArrowExpandable="︾"
+let g:NERDTreeDirArrowCollapsible="︽"
+
 
 "changed emmet leader key from (ctrl y c) to (ctrl , ,)
 let g:user_emmet_leader_key=','
 
 "prettier format using :Prettier
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-vmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+" command! -nargs=0 Prettier :CocCommand prettier.formatFile
+" vmap <leader>f  <Plug>(coc-format-selected)
+" nmap <leader>f  <Plug>(coc-format-selected)
+" prettier formats on save ctrs s
 
 "Airline theme
 "let g:airline_theme='xtermlight'
@@ -78,11 +83,12 @@ endif
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
+"let g:airline_right_sep = '👽'
 let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-"everything from https://github.com/vim-airline/vim-airline
+"from https://github.com/vim-airline/vim-airline
 "end airline
 
 "indent guide/indent colors
@@ -94,11 +100,11 @@ let g:indent_guides_enable_on_vim_startup = 1 "auto enable
 "indent guideEnd
 
 "THEME, COLOR SCHEME
- :colorscheme gruvbox
- "hi Normal guibg=NONE ctermbg=NONE 
-  "not let dark theme background take effect
+:colorscheme gruvbox
+"make bgcolor transparent
+hi Normal guibg=NONE ctermbg=NONE 
 
-"CURSOR
+"CURSOR COLOR
 "highlight iCursor guifg=white guibg=red  
 "above sets the cursor insert mode color to red.
 set guicursor+=i:ver100-iCursor "sets cursor line cursor on insert mode, also sets it to a 100% vertical line instead of dfault 25%.
@@ -108,6 +114,10 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra' "set current directory as working directory if no directory specified
 
+"clean up nerdtree
+let NERDTreeMinimalUI=1
+let g:NERDTreeWinSize=30 "nerdtree window width
+let g:NERDTreeWinPos = "right"
 
 " let g:indentLine_setColors = 0 "overwrite gray indent color with colorscheme
 
@@ -115,3 +125,8 @@ let g:ctrlp_working_path_mode = 'ra' "set current directory as working directory
 "also reads top to bottom. if you put the theme code after the cursor code,
 " the theme setting will override the cursor.
 
+"close nerdtree after last buffer closes
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") 
+      \ && b:NERDTree.isTabTree()) | q | endif
+" close if only windows left is nerdtree
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

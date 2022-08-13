@@ -1,11 +1,22 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "diagnostic.checkCurrentLine": true,
-  //"diagnostic.virtualText": true,
-  //"diagnostic.virtualTextCurrentLineOnly": false,
-  //"eslint.autoFixOnSave": true,
+    "coc.preferences.formatOnSaveFiletypes": ["*"],
 
-  // prettier config
-  "prettier.printWidth": 100 // 80 default and standard but doesnt work properly cuttin lines in html
-  //"prettier.singleQuote": true //use single quotes instead of double for jscript
+    "diagnostic.checkCurrentLine": true,
+    //"diagnostic.virtualText": true,
+    //"diagnostic.virtualTextCurrentLineOnly": false,
+    "eslint.autoFixOnSave": true,
+
+    // prettier config
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 90, // 80 default and standard but doesnt work properly cuttin lines in html
+    "prettier.tabWidth": 4,
+    "prettier.arrowParens": "avoid",
+    "prettier.trailingComma": "all",
+
+    "html-css-support.enabledLanguages": [
+        "html",
+        "htmldjango",
+        "typescriptreact",
+        "javascriptreact"
+    ]
 }
