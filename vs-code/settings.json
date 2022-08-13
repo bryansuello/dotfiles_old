@@ -1,77 +1,84 @@
 {
-  "editor.formatOnSave": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Hack Nerd Font', monospace, 'Droid Sans Fallback'",
-  "breadcrumbs.enabled": false,
-  "editor.fontLigatures": false,
-  "workbench.editor.tabSizing": "shrink",
+    "editor.formatOnSave": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Hack Nerd Font', monospace, 'Droid Sans Fallback'",
+    "breadcrumbs.enabled": false,
+    "editor.fontLigatures": false,
+    //exclude editor from watching these directories to use less resources
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true
+    },
 
-  //exclude editor from watching these directories to use less resources
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/node_modules/**": true
-  },
+    // VIM
+    // "vim.vimrc.path": "/home/daddy/.config/nvim/init.vim",
+    "vim.startInInsertMode": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
 
-  // VIM
-  // "vim.vimrc.path": "/home/daddy/.config/nvim/init.vim",
-  "vim.startInInsertMode": false,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["k", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.easymotion": true,
-  "vim.leader": "<space>",
+    "editor.cursorBlinking": "phase",
+    "editor.minimap.enabled": false,
+    "editor.tokenColorCustomizations": {},
 
-  //Color Customizations
-  "workbench.colorCustomizations": {
-    "workbench.editor.tabSizing": "shrink"
-  },
+    //Date & Time extension
+    "dateTime.showDayOfMonth": true,
+    "dateTime.showMonth": true,
+    "dateTime.use24HourClock": false,
+    "dateTime.showAMPM": true,
+    "dateTime.customFormat": "ddd, MM-DD-YY   hh:mm A",
+    "editor.semanticTokenColorCustomizations": {},
+    "editor.renderWhitespace": "all",
+    "workbench.sideBar.location": "right",
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideTabs": false,
+    "zenMode.centerLayout": false,
+    "zenMode.restore": false,
+    "zenMode.silentNotifications": false,
+    "workbench.startupEditor": "none",
+    "editor.codeLens": false,
+    "telemetry.telemetryLevel": "off",
+    "editor.linkedEditing": true,
+    "editor.guides.bracketPairs": true,
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 15,
+    "editor.hideCursorInOverviewRuler": true,
+    //"editor.colorDecorators": false //color box beside color code
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 0, //minimap inside scrollbar
+    "workbench.activityBar.visible": false,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.layoutControl.enabled": false,
+    // "window.menuBarVisibility": "compact", //use :q, :bd, or :bdelete - the vim way
+    "vscode_custom_css.imports": ["file:///C:/Users/brys/Documents/custom.css"],
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "hidden",
+    "terminal.explorerKind": "external",
+    // "window.title": "💯",
+    "window.newWindowDimensions": "inherit",
+    "workbench.colorCustomizations": {
+        "titleBar.activeForeground": "#00000000"
+    },
+    "editor.rulers": [80],
+    "colorize.languages": ["javascript", "typescript"], //bring colorize to javascript
 
-  "editor.cursorBlinking": "phase",
-  "editor.minimap.enabled": false,
-  "editor.tokenColorCustomizations": {},
-
-  //Date & Time extension
-  "dateTime.showDayOfMonth": true,
-  "dateTime.showMonth": true,
-  "dateTime.use24HourClock": false,
-  "dateTime.showAMPM": true,
-  "dateTime.customFormat": "ddd, MM-DD-YY   hh:mm A",
-  "editor.semanticTokenColorCustomizations": {},
-  "editor.renderWhitespace": "all",
-  "workbench.sideBar.location": "right",
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideStatusBar": false,
-  "zenMode.hideTabs": false,
-  "zenMode.centerLayout": false,
-  "zenMode.restore": false,
-  "zenMode.silentNotifications": false,
-  "workbench.startupEditor": "none",
-  "editor.codeLens": false,
-  "telemetry.telemetryLevel": "off",
-  "editor.linkedEditing": true,
-  "editor.guides.bracketPairs": true,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontSize": 15,
-  "editor.hideCursorInOverviewRuler": true,
-  //"editor.colorDecorators": false //color box beside color code
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 0, //minimap inside scrollbar
-  "workbench.activityBar.visible": false,
-  "workbench.editor.tabCloseButton": "off",
-  "workbench.layoutControl.enabled": false,
-  // "window.menuBarVisibility": "compact", //use :q, :bd, or :bdelete - the vim way
-  "vscode_custom_css.imports": ["file:///C:/Users/brys/Documents/custom.css"],
-  "window.titleBarStyle": "custom",
-  "window.menuBarVisibility": "hidden"
+    //prettier
+    "prettier.singleQuote": true, //singe quotes for javascript files
+    "prettier.arrowParens": "avoid",
+    "prettier.semi": true
 }
